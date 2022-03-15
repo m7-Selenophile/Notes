@@ -1,2 +1,2 @@
 # Notes
-Its all about Class 12th notes on c programming
+These are the notes that I've been writing while I am learning some stuffs.
