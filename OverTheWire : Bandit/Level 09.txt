@@ -1,0 +1,25 @@
+         - - - - - - - - -  
+        ' Bandit Level 9  '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+                        _Himanshu Mahato - Selenophile
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit9
+password : UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhRi
+
+$ ssh bandit9@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+Try the following commands
+
+$ strings data.txt | grep "="
+
+strings     -> To read the strings of the file
+grep "="    -> to grep = 
+
+we got password for level 10 truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+Bandit10 we've got you 

@@ -1,0 +1,29 @@
+         - - - - - - - - -  
+        ' Bandit Level 3  '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+                        _Himanshu Mahato
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit3
+password : UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+command to connect to ssh :
+
+$ ssh bandit3@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+$ ls #To see file on the current directory
+Its a directory
+$ cd inhere #To change directory to inhere
+$ ls #To see the content of the directory
+Opps! There is nothing; lets change the mode
+
+$ls -a # To see all directory in that folder including hidden
+Boom we got '.hidden' file
+$cat .hidden # To read that file
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+which is password for level4 i.e. we hunted bandit3 and gain info about bandit4

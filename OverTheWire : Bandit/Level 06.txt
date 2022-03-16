@@ -1,0 +1,64 @@
+         - - - - - - - - -  
+        ' Bandit Level 6  '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+                        _Himanshu Mahato - Selenophile
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit6
+password : DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+$ ssh bandit6@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+Try the following things..
+
+[ We have following hints ]
+
+The password has following properties
+
+1. owned by user bandit7
+2. owned by group bandit6
+3. 33 bytes in size
+
+Now lets run the command
+
+$ find / -size 33c -user bandit7 -group bandit6
+
+Here command meaning 
+/               -> start searching form root directory
+-size 33c       -> 33 is number and c denotes bytes
+-user uname     -> To determine the user
+-group gname    -> To determine the group
+
+You can also try the following command
+
+First change directory to root 
+
+$cd / 
+
+Then run the command as 
+$ find ./ -size 33c -user bandit7 -group bandit6
+
+But we are getting lots of error message i.e stderr standard output with the standard output i.e. stdout
+
+To tackel this one we can use the following command
+
+$ find / -size  33c -user bandit7 -group bandit6 2>/dev/null
+
+command meaning 
+2               -> standard error i.e. stderr
+>/dev/null      -> To send the data to null directory
+
+After running the following command we see output
+
+/var/lib/dpkg/info/bandit7.password
+
+To read  the file use command
+
+$ cat /var/lib/dpkg/info/bandit7.password
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+Boom we got the password.

@@ -1,0 +1,32 @@
+         - - - - - - - - -  
+        ' Bandit Level 5  '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+                        _Himanshu Mahato
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit5
+password : koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+command to connect to ssh :
+
+$ ssh bandit5@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+$ ls #To see file on the current directory
+Its a directory
+$ cd inhere #To change directory to inhere
+$ ls #To see the content of the directory
+
+Shit this time lots of directory !
+
+lets try to short this out using find command
+
+$ find . -size 1033c \! -executable 
+./maybehere07/.file2
+
+$ cat ./maybehere07/.file2
+
+Boom we got the password DXjZPULLxYr17uwoI01bNLQbtFemEgo7

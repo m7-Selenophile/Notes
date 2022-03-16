@@ -1,0 +1,44 @@
+         - - - - - - - - -  
+        ' Bandit Level 7 '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+                        _Himanshu Mahato - Selenophile
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit7
+password : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+$ ssh bandit7@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+Try the following command
+
+$ cat data.txt
+
+you can see output as 
+
+survival        sGNRNzRRbfawPRxFp7hTHRoNzF6cMVP0
+nominates       esv5iUa3c6nGJYWRos1rJG1NLwqYDW2g
+stalk's itlMyG8rqIKsjw8MOTnudP8gvRCpEGe1
+clarinetist's   kTOHY1kdfaKUtfGLoewXYLZwZlKhcG0x
+executed        9RmqNprIjToYcPD01NSh8d1aPF9yfpdE
+
+Its so ridiculous that there are lost of data.
+Question hint the password is next to millionth
+
+$ cat data.txt | grep millionth
+
+command meaning:
+
+|       -> used to send data to another command
+grep    -> Its is used to match the word and print
+
+we got output :
+millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+Thus cvX2JJa4CFALtqS87jk27qwqGhBM9plV is password for bandit8
+
+Boom!!!
+

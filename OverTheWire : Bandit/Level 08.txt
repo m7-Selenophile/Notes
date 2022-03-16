@@ -1,0 +1,36 @@
+         - - - - - - - - -  
+        ' Bandit Level 8  '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+                        _Himanshu Mahato - Selenophile
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit8
+password : cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+$ ssh bandit8@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+[Hint we have 'The password for the next level is stored in the file data.txt and is the only line of text that occurs only once']
+
+Try the following command
+$ cat data.txt
+
+Its too much crazy to see this much data 
+
+$ cat data.txt | sort | uniq -u
+
+command meaning:
+
+sort    -> used to sort the data in a file
+uniq    -> check for command to find unique one 
+-u      -> To check the uniq line only
+
+The output which is password for bandit9
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhRi
+
+Boom ! we got stroger in searching files
+
+

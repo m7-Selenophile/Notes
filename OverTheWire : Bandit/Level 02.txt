@@ -1,0 +1,26 @@
+         - - - - - - - - -  
+        ' Bandit Level 2  '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+			_Himanshu Mahato
+
+host: bandit.labs.overthewire.org
+port : 2220
+user : bandit2
+password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+command to connect ssh:
+
+$ ssh bandit2@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+$ ls #To see file on the current directory
+$ cat 'spaces in this filename' #To read the files having 
+spaces between them
+
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+Boom! we unlocked level3 i.e bandit3
+
+

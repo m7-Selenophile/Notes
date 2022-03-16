@@ -1,0 +1,29 @@
+
+	 - - - - - - - - -  
+	' Bandit Level 0  '
+	'          _M7    '	  '
+	'- - - - - - - - -' 
+
+Connect to ssh using the following data
+
+host : bandit.labs.overthewire.org
+user : bandit0
+password : bandit0
+port : 2220
+
+If your using linux box like me and have installed ssh tool
+like openssh then use the following command
+
+$ ssh bandit0@bandit.labs.overthewire.org -p 2220
+Enter the password 
+
+We were logged in 
+
+$ ls    #To list the directory
+we saw a 'readme' file 
+
+$ cat readme #To read the file
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Which is the password for the next level 
+

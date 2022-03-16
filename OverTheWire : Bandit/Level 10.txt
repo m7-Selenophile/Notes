@@ -1,0 +1,25 @@
+         - - - - - - - - -  
+        ' Bandit Level 10 '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+                        _Himanshu Mahato - Selenophile
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit10
+password : truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+$ ssh bandit10@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+In our question it is said that the data is in base64 formate
+
+$ls 
+To see the files
+
+$base64 --decode data.txt 
+To decode it 
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+which is our password for bandit11

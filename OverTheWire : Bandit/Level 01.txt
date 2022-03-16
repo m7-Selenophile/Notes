@@ -1,0 +1,24 @@
+         - - - - - - - - -  
+        ' Bandit Level 1  ' 
+        '          _M7    '       
+        '- - - - - - - - -'
+			_Himanshu Mahato
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit1
+password : boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+command to connect ssh :
+
+$ ssh bandit1@bandit.labs.overthewire.org -p 2220
+
+
+When you get connected to bandit1
+
+$ls	# To see the list of files on current directory
+$cat ./- # To read the dashed file
+
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+which is password for level2 i.e. Bandit2 

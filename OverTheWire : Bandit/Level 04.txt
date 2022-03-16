@@ -1,0 +1,39 @@
+         - - - - - - - - -  
+        ' Bandit Level 4  '
+        '          _M7    ' 
+        '- - - - - - - - -' 
+                        _Himanshu Mahato
+
+host : bandit.labs.overthewire.org
+port : 2220
+user : bandit4
+password : pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+command to connect to ssh :
+
+$ ssh bandit4@bandit.labs.overthewire.org -p 2220 
+
+Once you got logged in :
+
+$ ls #To see file on the current directory
+Its a directory
+$ cd inhere #To change directory to inhere
+$ ls #To see the content of the directory
+
+sh*t there are lots of files. And I am a Lazy guy.
+
+So in question there is a hint that the file which is in human readble for is the right one
+
+Lets find out.
+
+We know human readble form is ASCII text.
+
+$ file ./-file0* 
+-file0* means that file name -file01, -file02 ..
+
+$ file ./-file0* | grep ASCII 
+to grep only the ASCII one 
+
+$ cat ./-file07
+
+Boom we got the password koReBOKuIDDepwhWk7jZC0RTdopnAYKh
